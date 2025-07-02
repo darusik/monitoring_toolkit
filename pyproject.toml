@@ -1,0 +1,29 @@
+[project]
+name = "ml-attack-monitoring"
+version = "0.1.0"
+description = "Toolkit for detecting adversarial behavior against ML APIs"
+authors = [{ name = "Daryna Oliynyk", email = "doliynyk@sba-research.org" }]
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = [
+    "torch",
+    "torchvision",
+    "numpy",
+    "Pillow",
+    "sentence-transformers",
+    "scikit-learn"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]

@@ -1,0 +1,7 @@
+imagehash==4.3.2
+numpy==2.3.1
+pandas==2.3.0
+Pillow==11.3.0
+sentence_transformers==5.0.0
+torch==2.7.1
+torchvision==0.22.1
