@@ -18,7 +18,7 @@
 This module defines the DetectionResult class, which encapsulates the result of a detection operation.
 """
 
-from dataclasses import dataclass, field
+from dataclasses import asdict, dataclass, field
 
 @dataclass
 class DetectionResult:
@@ -26,3 +26,18 @@ class DetectionResult:
     confidence: float
     reason: str
     metadata: dict = field(default_factory=dict)
+
+    def __post_init__(self):
+        """
+        Post-initialization processing to ensure that the attributes are of the correct type.
+        """
+        self.is_suspicious = bool(self.is_suspicious)
+        self.confidence = float(self.confidence)
+        self.reason = str(self.reason)
+        self.metadata = dict(self.metadata)
+
+    def dict(self) -> dict:
+        """
+        Convert the DetectionResult instance to a dictionary.
+        """
+        return asdict(self)
