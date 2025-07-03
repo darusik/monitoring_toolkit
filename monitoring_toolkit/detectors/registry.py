@@ -21,14 +21,14 @@ This module defines a registry for various detectors, allowing dynamic retrieval
 
 import inspect
 
-from detectors.base_detector import BaseDetector
-from detectors.confidence_detector import ConfidenceDetector
-from detectors.repetition_detector import (   RepetitionDetector,
+from monitoring_toolkit.detectors.base_detector import BaseDetector
+from monitoring_toolkit.detectors.confidence_detector import ConfidenceDetector
+from monitoring_toolkit.detectors.repetition_detector import (   RepetitionDetector,
     ImageRepetitionDetector,
     TabularRepetitionDetector,
     TextRepetitionDetector
 )
-from detectors.similarity_detector import (   SimilarityDetector,
+from monitoring_toolkit.detectors.similarity_detector import (   SimilarityDetector,
     ImageSimilarityDetector,
     TabularSimilarityDetector,
     TextSimilarityDetector

@@ -7,8 +7,8 @@ from pathlib import Path
 from torchvision import transforms
 from torchvision.datasets.utils import download_url
 
-from detectors import get_detector
-from utils.query import Query
+from monitoring_toolkit.detectors import get_detector
+from monitoring_toolkit.utils.query import Query
 
 # Get a test image
 ROOT = Path(__file__).resolve().parent

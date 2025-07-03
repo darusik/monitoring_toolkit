@@ -21,8 +21,8 @@ This module defines the BaseDetector class, which serves as an abstract base cla
 from abc import ABC, abstractmethod
 from typing import Iterable, Iterator
 
-from detectors.result import DetectionResult
-from utils.query import Query
+from monitoring_toolkit.detectors.result import DetectionResult
+from monitoring_toolkit.utils.query import Query
 
 import logging
 

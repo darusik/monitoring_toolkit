@@ -21,9 +21,9 @@ import pandas as pd
 from PIL import Image
 
 
-from detectors.similarity_detector import ImageSimilarityDetector, TabularSimilarityDetector, TextSimilarityDetector    
-from detectors.result import DetectionResult
-from utils.query import Query
+from monitoring_toolkit.detectors.similarity_detector import ImageSimilarityDetector, TabularSimilarityDetector, TextSimilarityDetector    
+from monitoring_toolkit.detectors.result import DetectionResult
+from monitoring_toolkit.utils.query import Query
 
 
 # --- Image tests ---

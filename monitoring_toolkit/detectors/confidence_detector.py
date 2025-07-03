@@ -24,9 +24,9 @@ import numpy as np
 from collections import deque
 from typing import Iterable
 
-from detectors.base_detector import BaseDetector
-from detectors.result import DetectionResult
-from utils.query import Query
+from monitoring_toolkit.detectors.base_detector import BaseDetector
+from monitoring_toolkit.detectors.result import DetectionResult
+from monitoring_toolkit.utils.query import Query
 
 logger = logging.getLogger(__name__)
 

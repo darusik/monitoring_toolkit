@@ -20,9 +20,9 @@ import torch
 from PIL import Image
 import pandas as pd
 
-from detectors.repetition_detector import ImageRepetitionDetector, TabularRepetitionDetector, TextRepetitionDetector
-from detectors.result import DetectionResult
-from utils.query import Query
+from monitoring_toolkit.detectors.repetition_detector import ImageRepetitionDetector, TabularRepetitionDetector, TextRepetitionDetector
+from monitoring_toolkit.detectors.result import DetectionResult
+from monitoring_toolkit.utils.query import Query
 
 # --- Image tests ---
 def test_image_detector_with_pil():
